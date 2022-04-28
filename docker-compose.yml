@@ -6,6 +6,7 @@ services:
     volumes:
       - /home/fouri/.ssh:/root/.ssh
       - /home/fouri/.auto:/autocommit
+      - /home/fouri/.auto/.git:/autocommit/.git
     command:
       - /bin/sh
       - -ecx

@@ -19,7 +19,7 @@ if [  "$?" = "0" ]; then
 
 	cd $Dir
 	git add .
-	git commit -m "Day $plus"
+	git commit -m "$plus"
 	git push origin master
 
 	echo "success"
