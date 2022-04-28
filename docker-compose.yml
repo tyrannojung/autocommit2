@@ -1,0 +1,14 @@
+version: "3"
+services:
+  autocommit:
+    image: alpine/autocommit:latest
+    restart: always
+    volumes:
+      - /home/fouri/.ssh:/root/.ssh
+      - /home/fouri/.auto:/autocommit
+    command:
+      - /bin/sh
+      - -ecx
+      - |
+       crond -f
+       sleep infinity	
